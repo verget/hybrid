@@ -15,7 +15,7 @@ const routes: Routes = [
     },
     {
       path: 'angularjs',
-      loadChildren: './angular.upgrade.module#AngularJSModule'
+      loadChildren: './angular-upgrade.module#AngularJSModule'
     },
     {
       path: '**',
