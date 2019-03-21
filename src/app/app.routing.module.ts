@@ -6,12 +6,16 @@ import { AngularComponent } from './components/angular/angular.component';
 const routes: Routes = [
     {
       path: '',
-      redirectTo: 'main',
+      redirectTo: 'angular',
       pathMatch: 'full'
     },
     {
       path: 'angular',
       component: AngularComponent
+    },
+    {
+      path: 'angularjs',
+      loadChildren: './angular.upgrade.module#AngularJSModule'
     },
     {
       path: '**',
