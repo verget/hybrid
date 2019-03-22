@@ -1,27 +1,17 @@
-# Hybrid
+# Hybrid Test Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+Simple single page web application that shows ability to use angular and angularjs on one application
 
-## Development server
+## Technology
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular6
+- Angular 1.7
+- @angular/upgrade
+- material
+- Scss CSS pre-processor
+- Npm
 
-## Code scaffolding
+## How to Use
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Install dependency by `npm install`
+2. Start an application by `npm start` 
