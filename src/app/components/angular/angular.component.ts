@@ -21,7 +21,7 @@ export class AngularComponent implements OnInit {
   }
 
   public goToAngularJs() {
-    this.router.navigate(['/angularjs'], { queryParams: { transferesParam: this.inputValue }});
+    this.router.navigate(['/angularjs'], { queryParams: { transferedParam: this.inputValue }});
   }
 
 }
