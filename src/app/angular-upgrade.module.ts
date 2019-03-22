@@ -1,6 +1,5 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
 import { ngmodule } from './angular-js/angular-js.module';
 import { UpgradeModule } from '@angular/upgrade/static';
 import { setUpLocationSync } from '@angular/router/upgrade';

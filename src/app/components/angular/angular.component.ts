@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-angular',
@@ -10,13 +10,18 @@ export class AngularComponent implements OnInit {
 
   public inputValue: string;
   constructor(
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit() {
     this.activatedRoute.queryParams.subscribe(params => {
       this.inputValue = params['transferedParam'];
     });
+  }
+
+  public goToAngularJs() {
+    this.router.navigate(['/angularjs'], { queryParams: { transferesParam: this.inputValue }});
   }
 
 }

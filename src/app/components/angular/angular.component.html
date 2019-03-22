@@ -1,6 +1,11 @@
-<mat-form-field>
-  <mat-label>Param</mat-label>
-  <input [(ngModel)]="inputValue" matInput>
-</mat-form-field>
-<br>
-<a routerLink="/angularjs" [queryParams]="{transferedParam: inputValue}"> angular.js</a>
+<div class="container">
+  <h1>Angular component</h1>
+  <mat-form-field>
+    <mat-label>Param</mat-label>
+    <input [(ngModel)]="inputValue" matInput>
+  </mat-form-field>
+  <br>
+  <button type="button" color="primary" mat-stroked-button (click)="goToAngularJs()">
+    AngularJS
+  </button>
+</div>

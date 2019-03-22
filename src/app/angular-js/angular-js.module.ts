@@ -19,7 +19,7 @@ ngmodule.config(($locationProvider: any, $stateProvider: any) => {
       <input ng-model="textModel">
     </md-input-container>
     <br>
-      <md-button class="md-raised" ng-click="switch()">
+      <md-button class="md-primary md-raised" ng-click="goToAngular()">
         Switch to Angular
       </md-button>
     </div>
@@ -36,7 +36,7 @@ ngmodule.config(($locationProvider: any, $stateProvider: any) => {
     const textValue = $location.search()['transferedParam'];
     $scope.textModel = textValue;
   }
-  $scope.switch = () => {
+  $scope.goToAngular = () => {
     if ($scope.textModel) {
       $location.url('angular' + '?transferedParam=' + $scope.textModel);
     } else {
